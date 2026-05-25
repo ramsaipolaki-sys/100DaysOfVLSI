@@ -1,4 +1,4 @@
-#160DaysOfVLSI
+#100DaysOfVLSI
 
 Hi, I am an ECE student learning VLSI Design.
 
