@@ -1,0 +1,98 @@
+# Day 4 of My VLSI Journey 🚀
+
+Hello everyone!
+
+Today, I learned about one of the basic concepts in Verilog: Data Types.
+
+Before connecting and storing values in a design, it is important to understand how Verilog represents signals.
+
+---
+
+## What are Data Types in Verilog?
+
+Data types define how signals are represented and used inside a Verilog design.
+
+The two most commonly used data types are:
+
+- wire
+- reg
+
+---
+
+## wire
+
+A wire is used to connect different parts of a circuit.
+
+It does not store a value.
+
+Its value depends on what is driving it.
+
+### Example
+
+```verilog
+wire y;
+assign y = a & b;
+```
+
+Here, `y` continuously follows the result of `a & b`.
+
+---
+
+## reg
+
+A reg can hold a value until it is updated again.
+
+It is commonly used inside procedural blocks like `always` and `initial`.
+
+### Example
+
+```verilog
+reg y;
+
+always @(*) begin
+    y = a & b;
+end
+```
+
+Here, `y` gets updated whenever the inputs change.
+
+---
+
+## Real-Life Analogy
+
+Think of a wire as a water pipe.
+
+Water flows through it, but the pipe does not store water.
+
+Think of a reg as a water tank.
+
+It can hold water until a new amount is added or removed.
+
+---
+
+## Key Takeaways
+
+✅ Data types define how signals behave
+
+✅ wire is used for connections
+
+✅ reg is used to hold values in procedural blocks
+
+✅ Understanding data types is important for RTL design
+
+---
+
+## Day 4 Summary
+
+Today, I learned the difference between wire and reg in Verilog. I understood that wire is mainly used for connecting signals, while reg is used inside procedural blocks to store and update values.
+
+### Learning Progress
+
+- Day 1 ✅ What is VLSI?
+- Day 2 ✅ What is Verilog?
+- Day 3 ✅ Modules and Ports
+- Day 4 ✅ Verilog Data Types (wire and reg)
+
+Looking forward to learning Verilog operators next!
+
+#VLSI #Verilog #RTLDesign #DigitalDesign #LearningInPublic
